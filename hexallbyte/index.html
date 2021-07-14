@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hexallbyte</title>
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="all">
+
+        <div class="container">
+            
+            <nav class="nav-main">
+                <img src="./src/img/brand.png" alt="Hexallbyte LOGO" class="nav-brand">
+                <ul class="nav-menu">
+                    <li id="nav-blog" onclick="cview('downloads')" class="nav-button">
+                        <p>Blog</p>
+                        <ul class="nav-extend">
+                            <li>pepinillos</li>
+                            <li>huevos</li>
+                            <li>aceitunas</li>
+                        </ul>
+                    </li>
+                    <li id="nav-ig" onclick="cview('downloads')" class="nav-button">
+                        <p>Instagram</p>
+                        <ul class="nav-extend">
+                            <li>pepinillos</li>
+                            <li>huevos</li>
+                            <li>aceitunas</li>
+                        </ul>
+                    </li>
+                    <li id="nav-yt" onclick="cview('downloads')" class="nav-button">
+                        <p>YouTube</p>
+                        <ul class="nav-extend">
+                            <li>pepinillos</li>
+                            <li>huevos</li>
+                            <li>aceitunas</li>
+                        </ul>
+                    </li>
+                    <li id="nav-news" onclick="cview('downloads')" class="nav-button">
+                        <p>Noticias</p>
+                        <ul class="nav-extend">
+                            <li>pepinillos</li>
+                            <li>huevos</li>
+                            <li>aceitunas</li>
+                        </ul>
+                    </li>
+                    <li id="nav-pryts" onclick="cview('downloads')" class="nav-button">
+                        <p>Proyectos</p>
+                        <ul class="nav-extend">
+                            <li>pepinillos</li>
+                            <li>huevos</li>
+                            <li>aceitunas</li>
+                        </ul>
+                    </li>
+                    <li id="nav-games" onclick="cview('downloads')" class="nav-button">
+                        <p>Juegos</p>
+                        <ul class="nav-extend">
+                            <li>pepinillos</li>
+                            <li>huevos</li>
+                            <li>aceitunas</li>
+                        </ul>
+                    </li>
+                    <li id="nav-apps" onclick="cview('downloads')" class="nav-button">
+                        <p>Aplicaciones</p>
+                        <ul class="nav-extend">
+                            <li>pepinillos</li>
+                            <li>huevos</li>
+                            <li>aceitunas</li>
+                        </ul>
+                    </li>
+                    <li id="nav-downloads" onclick="cview('downloads')" class="nav-button">
+                        <p>Descargas</p>
+                        <ul class="nav-extend">
+                            <li>pepinillos</li>
+                            <li>huevos</li>
+                            <li>aceitunas</li>
+                        </ul>
+                    </li>
+                    <li id="nav-socialnetworks" onclick="cview('downloads')" class="nav-button">
+                        <p>Redes sociales</p>
+                        <ul class="nav-extend">
+                            <li>pepinillos</li>
+                            <li>huevos</li>
+                            <li>aceitunas</li>
+                        </ul>
+                    </li>
+                    <li id="nav-more"onclick="cview('downloads')" class="nav-button">
+                        <p>Mas</p>
+                        <ul class="nav-extend">
+                            <li id="nav-more-blog">Blog</li>
+                            <li id="nav-more-news">Noticias</li>
+                            <li id="nav-more-pryts">Proyectos</li>
+                            <li id="nav-more-games">Juegos</li>
+                            <li id="nav-more-apps">Aplicaciones</li>
+                            <li id="nav-more-downloads">Descargas</li>
+                            <li id="nav-more-ig">Instagram</li>
+                            <li id="nav-more-socialnetworks">Redes sociales</li>
+                            <li id="nav-more-yt">YouTube</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav-menu-right">
+                    <li>
+                        <button style="display: inline;" id="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <form action="javascript:startSearch()" autocomplete="off">
+                            <input type="text" style="width: 80%; display: none;" id="search-input">
+                            <button style="display: none;" id="close-search-button">
+                                &nbsp<i class="fas fa-times"></i>
+                            </button>
+                            <button style="display: none;" id="start-search-button">
+                                &nbsp<i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+
+            <div id="home">
+
+                <div id="page-contnet">
+                    <header class="showcase" id="showcase" style="background: url('./src/img/showcase.jpg') no-repeat center center/cover;">
+                        <h2 id="showcase-h1"></h2>
+                        <p id="showcase-p1"></p>
+                        <button2 class="btn"><p>More <i class="fas fa-angle-double-right"></i></p></button2></button>
+                        <input class="img-scroller" id="showcase-scroller" type="range" min="1" max="5" value="1">
+                    </header>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="./js/main.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/imgscroller.js"></script>
+
+
+</body>
+
+</html>
